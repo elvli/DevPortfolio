@@ -5,27 +5,31 @@ const Projects = () => {
   const projectData = [
     {
       title: "BlackJackLab",
-      description: "This is a black jack training tool",
-      link: "#",
-      skills: ["React", "TailwindCSS", "Azure App service"],
+      description: `
+    This is a blackjack training tool designed for players to refine 
+    their strategy skills. It provides a platform where players can 
+    simulate various games, experiment with different approaches, 
+    and analyze outcomes in real time.
+  `,
+      link: "https://blackjacklab.azurewebsites.net/",
+      skills: ["React", "Tailwind CSS", "Azure App Service"],
     },
+
     {
       title: "GeoCraft",
-      description: "This is a map editing tool",
-      link: "#",
-      skills: ["React", "BootStrap", "MERN Stack"],
+      description: `Geocraft is a web-based tool for users to create and
+      share customized map graphics. Users can easily place markers, customize
+      colors, and even upload their own geographical data.`,
+      link: "https://geocraftmaps.azurewebsites.net/",
+      skills: ["MERN", "BootStrap", "MapBox API", "GeoJSON"],
     },
     {
       title: "Playlister",
-      description: "This is a playlist manager.",
+      description: `This is a playlist manager that allows users to create, play, 
+      and share playlists. Users engage with others by liking, disliking, and 
+      commenting on shared playlists.`,
       link: "#",
-      skills: ["Material UI"],
-    },
-    {
-      title: "Project 4",
-      description: "This is a description of project 4.",
-      link: "#",
-      skills: ["asd"],
+      skills: ["MERN", "Material UI", "YouTube API"],
     },
   ];
 
