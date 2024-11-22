@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 import portraitImg from "../Assets/round-portrait.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const handleScroll = (id) => {
+  const handleScroll = (id, offset = 0) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const topPosition = section.offsetTop - offset;
+      window.scrollTo({ top: topPosition, behavior: "smooth" });
     }
   };
 
@@ -18,9 +18,16 @@ function NavBar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={portraitImg} className="h-8" alt="Portrait Icon" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <a
+            href="about"
+            onClick={(e) => {
+              e.preventDefault();
+              handleScroll("about", 60);
+            }}
+            className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >
             Elven Li
-          </span>
+          </a>
         </div>
 
         <button
@@ -57,10 +64,8 @@ function NavBar() {
               <a
                 href="#about"
                 onClick={(e) => {
-                  e.preventDefault(); // Prevent default anchor behavior
-                  document
-                    .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" });
+                  e.preventDefault();
+                  handleScroll("about", 60);
                 }}
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
@@ -73,9 +78,7 @@ function NavBar() {
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
-                  document
-                    .getElementById("projects")
-                    .scrollIntoView({ behavior: "smooth" });
+                  handleScroll("projects", 60);
                 }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -87,9 +90,7 @@ function NavBar() {
                 href="#experience"
                 onClick={(e) => {
                   e.preventDefault();
-                  document
-                    .getElementById("experience")
-                    .scrollIntoView({ behavior: "smooth" });
+                  handleScroll("experience", 60);
                 }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -101,9 +102,7 @@ function NavBar() {
                 href="#education"
                 onClick={(e) => {
                   e.preventDefault();
-                  document
-                    .getElementById("education")
-                    .scrollIntoView({ behavior: "smooth" });
+                  handleScroll("education", 60);
                 }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
@@ -112,16 +111,14 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#skills"
                 onClick={(e) => {
                   e.preventDefault();
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
+                  handleScroll("skills", 60);
                 }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Contact
+                Skills
               </a>
             </li>
           </ul>

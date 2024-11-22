@@ -4,7 +4,7 @@ import NPowerLogo from "../Assets/npower-logo.png";
 
 function Education() {
   return (
-    <section id="education" className="py-16 pb-6 md:px-12">
+    <section id="education" className="py-16 pb-6 mb-10 md:px-12">
       <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
       <div className="max-w-7xl mx-auto flex flex-col mb-4 md:flex-row items-center justify-between">
         <div className="md:w-1/2 flex justify-center">
@@ -15,7 +15,7 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <h3 className="text-4xl font-semibold text-gray-800 ml-0">
+          <h3 className="text-3xl font-semibold text-gray-800 ml-0">
             Stony Brook University
           </h3>
           <h4 className="text-2xl text-gray-800 ml-0">
@@ -25,7 +25,8 @@ function Education() {
           <p className="text-lg text-gray-700">2020 - 2024</p>
           <p className="text-lg text-gray-700">GPA: 3.3/4.0</p>
           <p className="text-lg text-gray-700">
-            Data Structures - Analysis of Algorithms - Computer Network - Data Science
+            Data Structures - Analysis of Algorithms - Computer Network - Data
+            Science
           </p>
           <p className="text-lg text-gray-700">
             Machine Learning - Linear Algebra - Probability and Statistics
@@ -44,7 +45,7 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <h3 className="text-4xl font-semibold text-gray-800 ml-0">NPower</h3>
+          <h3 className="text-3xl font-semibold text-gray-800 ml-0">NPower</h3>
           <h4 className="text-2xl text-gray-800 ml-0">
             Network and Systems Administration Course
           </h4>
