@@ -6,8 +6,8 @@ function Education() {
   return (
     <section id="education" className="py-16 pb-6 mb-10 md:px-12">
       <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
-      <div className="max-w-7xl mx-auto flex flex-col mb-4 md:flex-row items-center justify-between">
-        <div className="md:w-1/2 flex justify-center">
+      <div className="max-w-7xl mx-4 lg:mx-auto flex flex-col mb-4 md:flex-row items-center justify-between">
+        <div className="md:w-1/2 mb-6 flex justify-center">
           <img
             src={SBULogo}
             alt="Portrait"
@@ -26,18 +26,16 @@ function Education() {
           <p className="text-lg text-gray-700">GPA: 3.3/4.0</p>
           <p className="text-lg text-gray-700">
             Data Structures - Analysis of Algorithms - Computer Network - Data
-            Science
-          </p>
-          <p className="text-lg text-gray-700">
-            Machine Learning - Linear Algebra - Probability and Statistics
+            Science - Machine Learning - Linear Algebra - Probability and
+            Statistics
           </p>
         </div>
       </div>
 
-      <hr className="my-8 border-t-2 border-gray-300 w-1/2 mx-auto" />
+      <hr className="mx-auto mb-12 border-t-2 border-gray-300 w-1/2" />
 
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
-        <div className="md:w-1/2 flex justify-center">
+      <div className="max-w-7xl mx-4 lg:mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 mb-6 flex justify-center">
           <img
             src={NPowerLogo}
             alt="Portrait"
@@ -52,10 +50,8 @@ function Education() {
 
           <p className="text-lg text-gray-700">2024 - Present</p>
           <p className="text-lg text-gray-700">
-            Linux Systems Administration - Computer Networking
-          </p>
-          <p className="text-lg text-gray-700">
-            Azure Cloud Computing - AI Fundamentals
+            Linux Systems Administration - Computer Networking - Azure Cloud
+            Computing - AI Fundamentals
           </p>
         </div>
       </div>
