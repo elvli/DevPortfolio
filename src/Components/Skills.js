@@ -119,7 +119,7 @@ function Skills() {
               key={index}
               className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md max-w-52 max-h-44 ml-3 lg:ml-0"
             >
-              <h3 className="text-lg font-semibold mb-4">{skill.title}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-center">{skill.title}</h3>
               <img
                 src={skill.img}
                 alt={`${skill.title} logo`}

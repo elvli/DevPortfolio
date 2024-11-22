@@ -1,5 +1,8 @@
 import React from "react";
 import portraitImg from "../Assets/round-portrait.png";
+import LinkedInDark from "../Assets/Icons/linkedin-dark.png";
+import GithubDark from "../Assets/Icons/github-dark.png";
+import InstagramDark from "../Assets/Icons/instagram-dark.png";
 
 function About() {
   return (
@@ -27,9 +30,13 @@ function About() {
                 href="https://www.linkedin.com/in/elvenli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-700"
+                className="inline-block"
               >
-                LinkedIn
+                <img
+                  src={LinkedInDark}
+                  alt="LinkedIn"
+                  className="h-6 w-6 hover:opacity-80"
+                />
               </a>
 
               <a
@@ -38,7 +45,24 @@ function About() {
                 rel="noopener noreferrer"
                 className="text-gray-900 hover:text-gray-700"
               >
-                GitHub
+                <img
+                  src={GithubDark}
+                  alt="Github"
+                  className="h-6 w-6 hover:opacity-80"
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/elven.li/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-900 hover:text-gray-700"
+              >
+                <img
+                  src={InstagramDark}
+                  alt="Instagram"
+                  className="h-6 w-6 hover:opacity-80"
+                />
               </a>
             </div>
           </div>

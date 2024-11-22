@@ -1,4 +1,7 @@
 import React from "react";
+import LinkedInLight from "../Assets/Icons/linkedin-light.png";
+import GithubLight from "../Assets/Icons/github-light.png";
+import InstagramLight from "../Assets/Icons/instagram-light.png";
 
 function Footer() {
   return (
@@ -13,20 +16,42 @@ function Footer() {
 
         <div className="flex space-x-6">
           <a
+            href="https://www.linkedin.com/in/elvenli"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img
+              src={LinkedInLight}
+              alt="LinkedIn"
+              className="h-6 w-6 hover:opacity-80"
+            />
+          </a>
+
+          <a
             href="https://github.com/elvli"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500"
+            className="text-gray-900 hover:text-gray-700"
           >
-            GitHub
+            <img
+              src={GithubLight}
+              alt="Github"
+              className="h-6 w-6 hover:opacity-80"
+            />
           </a>
+
           <a
-            href="https://linkedin.com/in/elvenli"
+            href="https://www.instagram.com/elven.li/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500"
+            className="text-gray-900 hover:text-gray-700"
           >
-            LinkedIn
+            <img
+              src={InstagramLight}
+              alt="Instagram"
+              className="h-6 w-6 hover:opacity-80"
+            />
           </a>
         </div>
       </div>
