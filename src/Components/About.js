@@ -4,10 +4,9 @@ import portraitImg from "../Assets/round-portrait.png";
 function About() {
   return (
     <div>
-      <section className="bg-gray-100 py-16 pt-32 pb-6 md:px-12">
+      <section id="about" className="bg-gray-100 py-16 pt-32 pb-6 md:px-12">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="text-left md:w-1/2 mb-8 md:mb-0">
-
             <h3 className="text-2xl text-gray-600 mb-2">Hi, my name is</h3>
 
             <h3 className="text-6xl font-semibold text-gray-800 mb-8 ml-0">

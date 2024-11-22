@@ -1,9 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import portraitImg from "../Assets/round-portrait.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white border-gray-200 dark:bg-gray-900 shadow z-50">
@@ -47,7 +55,13 @@ function NavBar() {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a
-                href="#"
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent default anchor behavior
+                  document
+                    .getElementById("about")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                 aria-current="page"
               >
@@ -56,7 +70,13 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("projects")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Projects
@@ -64,15 +84,41 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#experience"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("experience")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Resume
+                Experience
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#education"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("education")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Education
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Contact
