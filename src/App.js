@@ -1,6 +1,5 @@
 import 'font-awesome/css/font-awesome.min.css';
 
-import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Projects from "./Components/Projects";

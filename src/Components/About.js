@@ -37,18 +37,6 @@ function About() {
             {/* Social Media Links */}
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/elvenli"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block"
-              >
-                <img
-                  src={LinkedInDark}
-                  alt="LinkedIn"
-                  className="h-6 w-6 hover:opacity-80"
-                />
-              </a>
-              <a
                 href="https://github.com/elvli"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,6 +45,18 @@ function About() {
                 <img
                   src={GithubDark}
                   alt="Github"
+                  className="h-6 w-6 hover:opacity-80"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/elvenli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <img
+                  src={LinkedInDark}
+                  alt="LinkedIn"
                   className="h-6 w-6 hover:opacity-80"
                 />
               </a>

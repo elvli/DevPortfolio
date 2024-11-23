@@ -16,19 +16,6 @@ function Footer() {
 
         <div className="flex space-x-6">
           <a
-            href="https://www.linkedin.com/in/elvenli"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block"
-          >
-            <img
-              src={LinkedInLight}
-              alt="LinkedIn"
-              className="h-6 w-6 hover:opacity-80"
-            />
-          </a>
-
-          <a
             href="https://github.com/elvli"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +27,18 @@ function Footer() {
               className="h-6 w-6 hover:opacity-80"
             />
           </a>
-
+          <a
+            href="https://www.linkedin.com/in/elvenli"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <img
+              src={LinkedInLight}
+              alt="LinkedIn"
+              className="h-6 w-6 hover:opacity-80"
+            />
+          </a>
           <a
             href="https://www.instagram.com/elven.li/"
             target="_blank"

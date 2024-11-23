@@ -5,7 +5,7 @@ import NPowerLogo from "../Assets/npower-logo.png";
 function Education() {
   return (
     <section id="education" className="py-16 pb-6 mb-10 md:px-12">
-      <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">My Education</h2>
       <div className="max-w-7xl mx-4 lg:mx-auto flex flex-col mb-4 md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-6 flex justify-center">
           <img
@@ -15,19 +15,16 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <h3 className="text-3xl font-semibold text-gray-800 ml-0">
+          <p className="text-3xl font-semibold text-gray-800 ml-0">
             Stony Brook University
-          </h3>
-          <h4 className="text-2xl text-gray-800 ml-0">
-            B.S. in Computer Science
-          </h4>
-
-          <p className="text-lg text-gray-700">2020 - 2024</p>
-          <p className="text-lg text-gray-700">GPA: 3.3/4.0</p>
-          <p className="text-lg text-gray-700">
-            Data Structures - Analysis of Algorithms - Computer Network - Data
-            Science - Machine Learning - Linear Algebra - Probability and
-            Statistics
+          </p>
+          <p className="text-xl text-gray-800 ml-0">B.S. in Computer Science</p>
+          <p className="italic text-gray-700">2020 - 2024</p>
+          <p className="text-gray-700">GPA: 3.3/4.0</p>
+          <p className="text-gray-700">
+            Data Structures - Computer Algorithms - Computer Network - Full
+            Stack Web Development - Data Science - Machine Learning - Linear
+            Algebra - Probability and Statistics
           </p>
         </div>
       </div>
@@ -43,13 +40,13 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <h3 className="text-3xl font-semibold text-gray-800 ml-0">NPower</h3>
-          <h4 className="text-2xl text-gray-800 ml-0">
+          <p className="text-3xl font-semibold text-gray-800 ml-0">NPower</p>
+          <p className="text-xl text-gray-800 ml-0">
             Network and Systems Administration Course
-          </h4>
+          </p>
 
-          <p className="text-lg text-gray-700">2024 - Present</p>
-          <p className="text-lg text-gray-700">
+          <p className="italic text-gray-700">2024 - Present</p>
+          <p className="text-gray-700">
             Linux Systems Administration - Computer Networking - Azure Cloud
             Computing - AI Fundamentals
           </p>

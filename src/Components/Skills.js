@@ -111,7 +111,7 @@ function Skills() {
 
   return (
     <section id="skills" className="py-12 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
           {skillData.map((skill, index) => (
