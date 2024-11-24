@@ -7,34 +7,46 @@ import InstagramDark from "../Assets/Icons/instagram-dark.png";
 function About() {
   return (
     <div>
-      <section id="about" className="bg-gray-100 py-16 pt-32 pb-6 md:px-12">
-        <div className="max-w-7xl md:mx-auto mx-4 flex flex-col md:flex-row items-center justify-between">
-          {/* Text Section */}
-          <div className="text-left md:w-1/2 mb-8 md:mb-0">
+      <section id="about" className="bg-gray-100 py-12 pt-32 pb-6 md:px-12">
+        <div className="max-w-7xl md:mx-auto mx-6 flex flex-col md:flex-row items-center justify-between">
+          <div className="text-left md:w-1/2 mb-8 md:mb-0 md:mx-5">
             <h3 className="text-2xl text-gray-600 mb-2">Hi, my name is</h3>
-            <h3 className="text-6xl font-semibold text-gray-800 mb-8 ml-0">
+            <h3 className="text-6xl font-semibold text-gray-800 mb-4 ml-0">
               Elven Li
             </h3>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-4">
               I'm a passionate software engineer with a love for solving complex
               problems and building intuitive, user-friendly applications. I
               specialize in web development using React, JavaScript, and CSS
-              frameworks like Tailwind CSS. In my free time, I enjoy learning
-              new technologies, contributing to open-source projects, and
-              improving my skills as a developer.
+              frameworks like Tailwind CSS and BootStrap.
             </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Outside of software engineering, I enjoy building PCs and playing
+              competitive esports titles. I've been into motorsports for a
+              while, especially Formula One, and have just started getting into
+              baseball.
+            </p>
+            {/* <p className="text-lg text-gray-700 mb-8">
+              You can find my resume{" "}
+              <a
+                href="../Assets/resume.pdf"
+                className="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              .
+            </p> */}
           </div>
 
-          {/* Portrait and Social Media Section */}
           <div className="md:w-1/2 flex flex-col items-center">
-            {/* Portrait */}
             <img
               src={portraitImg}
               alt="Portrait"
-              className="rounded-full shadow-lg w-60 h-60 object-cover mb-6"
+              className="rounded-full shadow-lg w-64 h-64 object-cover mb-6 hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out"
             />
 
-            {/* Social Media Links */}
             <div className="flex space-x-6">
               <a
                 href="https://github.com/elvli"

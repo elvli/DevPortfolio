@@ -21,7 +21,7 @@ const ProjectCard = ({
     : "Present";
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col hover:scale-105 hover:shadow-xl transition-all duration-100 ease-in-out">
       <div className="p-4 flex-grow">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-sm italic text-gray-700">
@@ -49,7 +49,7 @@ const ProjectCard = ({
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="inline-block bg-gray-200 text-gray-800 text-sm font-medium rounded-full px-3 py-1"
+              className="inline-block bg-gray-200 text-gray-800 hover:bg-gray-300 text-sm font-medium rounded-full px-3 py-1 transition-all duration-100 ease-in-out"
             >
               {skill}
             </span>

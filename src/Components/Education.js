@@ -15,12 +15,19 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <p className="text-3xl font-semibold text-gray-800 ml-0">
+          <a
+            href={"https://www.stonybrook.edu/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl font-semibold text-gray-800 ml-0 hover:text-blue-700"
+          >
             Stony Brook University
-          </p>
+          </a>
           <p className="text-xl text-gray-800 ml-0">B.S. in Computer Science</p>
           <p className="italic text-gray-700">2020 - 2024</p>
-          <p className="text-gray-700">GPA: 3.3/4.0</p>
+          <p className="text-gray-700">
+            GPA: <i>3.3/4.0</i>
+          </p>
           <p className="text-gray-700">
             Data Structures - Computer Algorithms - Computer Network - Full
             Stack Web Development - Data Science - Machine Learning - Linear
@@ -40,7 +47,14 @@ function Education() {
           />
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
-          <p className="text-3xl font-semibold text-gray-800 ml-0">NPower</p>
+          <a
+            href={"https://www.stonybrook.edu/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl font-semibold text-gray-800 ml-0 hover:text-blue-700"
+          >
+            NPower
+          </a>
           <p className="text-xl text-gray-800 ml-0">
             Network and Systems Administration Course
           </p>

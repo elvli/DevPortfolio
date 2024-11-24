@@ -11,7 +11,9 @@ function Footer() {
           <p className="text-sm">
             Designed by Elven Li. {new Date().getFullYear()}.
           </p>
-          <p className="text-sm">Built with ReactJS. Hosted on Firebase.</p>
+          <p className="text-sm">
+            Built with <u>ReactJS</u>. Hosted on <u>Firebase</u>.
+          </p>
         </div>
 
         <div className="flex space-x-6">
