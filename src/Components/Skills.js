@@ -117,7 +117,7 @@ function Skills() {
           {skillData.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md max-w-52 max-h-44 ml-3 lg:ml-0 hover:scale-105 hover:shadow-2xl transition-all duration-100 ease-in-out"
+              className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md max-w-52 max-h-44 ml-3 lg:ml-0 hover:scale-105 hover:shadow-xl transition-all duration-100 ease-in-out"
             >
               <h3 className="text-lg font-semibold mb-4 text-center">{skill.title}</h3>
               <img

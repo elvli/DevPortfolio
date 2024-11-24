@@ -21,7 +21,7 @@ const ProjectCard = ({
     : "Present";
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col hover:scale-105 hover:shadow-xl transition-all duration-100 ease-in-out">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col hover:-translate-y-3 hover:shadow-xl transition-all duration-100 ease-in-out">
       <div className="p-4 flex-grow">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-sm italic text-gray-700">
