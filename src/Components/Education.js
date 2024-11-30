@@ -48,7 +48,7 @@ function Education() {
         </div>
         <div className="text-left md:w-1/2 mb-8 md:mb-0">
           <a
-            href={"https://www.stonybrook.edu/"}
+            href={"https://www.npower.org/"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl font-semibold text-gray-800 ml-0 hover:text-blue-700"
