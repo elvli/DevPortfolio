@@ -26,7 +26,7 @@ function Footer() {
             <img
               src={GithubLight}
               alt="Github"
-              className="h-6 w-6 hover:opacity-80"
+              className="h-6 w-6 hover:opacity-50"
             />
           </a>
           <a
@@ -38,7 +38,7 @@ function Footer() {
             <img
               src={LinkedInLight}
               alt="LinkedIn"
-              className="h-6 w-6 hover:opacity-80"
+              className="h-6 w-6 hover:opacity-50"
             />
           </a>
           <a
@@ -50,7 +50,7 @@ function Footer() {
             <img
               src={InstagramLight}
               alt="Instagram"
-              className="h-6 w-6 hover:opacity-80"
+              className="h-6 w-6 hover:opacity-50"
             />
           </a>
         </div>

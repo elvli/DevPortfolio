@@ -57,7 +57,7 @@ function About() {
                 <img
                   src={GithubDark}
                   alt="Github"
-                  className="h-6 w-6 hover:opacity-80"
+                  className="h-6 w-6 hover:opacity-50"
                 />
               </a>
               <a
@@ -69,7 +69,7 @@ function About() {
                 <img
                   src={LinkedInDark}
                   alt="LinkedIn"
-                  className="h-6 w-6 hover:opacity-80"
+                  className="h-6 w-6 hover:opacity-50"
                 />
               </a>
               <a
@@ -81,7 +81,7 @@ function About() {
                 <img
                   src={InstagramDark}
                   alt="Instagram"
-                  className="h-6 w-6 hover:opacity-80"
+                  className="h-6 w-6 hover:opacity-50"
                 />
               </a>
             </div>
