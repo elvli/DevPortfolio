@@ -3,6 +3,18 @@ import React from "react";
 function Experience() {
   const experiences = [
     {
+      role: "Software Developer",
+      company: "InkWorks Printing Inc.",
+      duration: "January 2025 - Present",
+      link: "https://inkworksprinting.shop",
+      description: [
+        `Developed a modern, responsive web interface, optimizing user experience across all devices.`
+        `Integrated Stripe for secure and seamless payment processing, enhancing transaction efficiency.`,
+        `Building an interactive design lab that enables users to create and customize t-shirt designs for print.`,
+        `Designed and managed a MongoDB database with 200+ product listings, ensuring efficient data organization and retrieval.`,
+      ],
+    },
+    {
       role: "IT Intern",
       company: "MDRC",
       duration: "July 2024 - August 2024",
