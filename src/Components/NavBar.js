@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import portraitImg from "../Assets/round-portrait.png";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const menuRef = useRef(null);
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   const handleScroll = (id, offset = 0) => {
     const section = document.getElementById(id);
@@ -11,7 +13,24 @@ function NavBar() {
       const topPosition = section.offsetTop - offset;
       window.scrollTo({ top: topPosition, behavior: "smooth" });
     }
+    setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white border-gray-200 shadow z-50">
@@ -24,7 +43,7 @@ function NavBar() {
               e.preventDefault();
               handleScroll("about", 60);
             }}
-            className="self-center text-2xl font-semibold whitespace-nowrap "
+            className="self-center text-2xl font-semibold whitespace-nowrap"
           >
             Elven Li
           </a>
@@ -54,6 +73,7 @@ function NavBar() {
         </button>
 
         <div
+          ref={menuRef}
           className={`w-full md:block md:w-auto ${
             isMenuOpen ? "block" : "hidden"
           }`}
