@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ProjectCard from "./ProjectCard";
 import BlackJackTN from "../Assets/Project Thumbnails/BlackjackLab_screenshot.png";
 import GeocraftTN from "../Assets/Project Thumbnails/Geocraft_screenshot.png";
@@ -53,7 +53,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-12">
+    <section id="projects" className="bg-gray-100 py-12">
       <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

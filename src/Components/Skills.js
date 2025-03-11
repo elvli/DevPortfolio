@@ -4,6 +4,7 @@ import PythonLogo from "../Assets/Skills/python-logo.png";
 import JavaLogo from "../Assets/Skills/java-logo.png";
 import CLogo from "../Assets/Skills/c-logo.png";
 import ReactLogo from "../Assets/Skills/react-logo.png";
+import ReduxLogo from "../Assets/Skills/redux-logo.png";
 import CSSLogo from "../Assets/Skills/css-logo.png";
 import HTMLLogo from "../Assets/Skills/html-logo.png";
 import MongoDBLogo from "../Assets/Skills/mongodb-logo.png";
@@ -14,8 +15,14 @@ import TailwindCSSLogo from "../Assets/Skills/tailwind-logo.png";
 import BootStrapLogo from "../Assets/Skills/bootstrap-logo.png";
 import MUILogo from "../Assets/Skills/mui-logo.png";
 import GithubLogo from "../Assets/Skills/github-logo.png";
+import GithubActionsLogo from "../Assets/Skills/github-actions-logo.png";
+import CICDLogo from "../Assets/Skills/CICD-logo.png";
+import JestLogo from "../Assets/Skills/jest-logo.png";
+import CypressLogo from "../Assets/Skills/cypress-logo.png";
 import AzureLogo from "../Assets/Skills/azure-logo.png";
 import FirebaseLogo from "../Assets/Skills/firebase-logo.png";
+import StripeLogo from "../Assets/Skills/stripe-logo.png";
+import LinuxLogo from "../Assets/Skills/linux-logo.png";
 import VSCodeLogo from "../Assets/Skills/vscode-logo.png";
 import IvanitiLogo from "../Assets/Skills/ivanti-logo.png";
 import OktaLogo from "../Assets/Skills/okta-logo.png";
@@ -42,6 +49,10 @@ function Skills() {
     {
       title: "ReactJS",
       img: ReactLogo,
+    },
+    {
+      title: "Reux",
+      img: ReduxLogo,
     },
     {
       title: "CSS",
@@ -84,12 +95,36 @@ function Skills() {
       img: GithubLogo,
     },
     {
+      title: "Github Actions",
+      img: GithubActionsLogo,
+    },
+    {
+      title: "CI/CD",
+      img: CICDLogo,
+    },
+    {
+      title: "Jest",
+      img: JestLogo,
+    },
+    {
+      title: "Cypress",
+      img: CypressLogo,
+    },
+    {
       title: "Azure",
       img: AzureLogo,
     },
     {
       title: "Firebase",
       img: FirebaseLogo,
+    },
+    {
+      title: "Stripe",
+      img: StripeLogo,
+    },
+    {
+      title: "Linux",
+      img: LinuxLogo,
     },
     {
       title: "VSCode",
@@ -119,7 +154,9 @@ function Skills() {
               key={index}
               className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md max-w-52 max-h-44 ml-3 lg:ml-0 hover:scale-105 hover:shadow-xl transition-all duration-100 ease-in-out"
             >
-              <h3 className="text-lg font-semibold mb-4 text-center">{skill.title}</h3>
+              <h3 className="text-lg font-semibold mb-4 text-center">
+                {skill.title}
+              </h3>
               <img
                 src={skill.img}
                 alt={`${skill.title} logo`}
