@@ -75,18 +75,17 @@ function About() {
               while, especially Formula One, and have just started getting into
               baseball.
             </p> */}
-            <p className="text-lg text-gray-700 mb-8">
-              You can view my resume{" "}
-              <a
-                href={resumePDF}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 underline"
-              >
-                here
-              </a>
-              .
-            </p>
+
+            <a
+              href={resumePDF}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full py-[1px] px-[2px] bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out"
+            >
+              <div className="rounded-full px-4 py-2 border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+                View My Resume
+              </div>
+            </a>
           </div>
         </div>
         {/* <ResumeViewer /> */}

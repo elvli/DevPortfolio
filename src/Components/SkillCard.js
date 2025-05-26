@@ -29,10 +29,10 @@ function SkillCard({ skill }) {
     <div
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="flex flex-col items-center rounded-xl shadow-md max-w-52 ml-3 lg:ml-0 transition-transform duration-300 ease-out bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 h-full"
       style={{
         transform: `perspective(600px) rotateX(${rotation.rotateX}deg) rotateY(${rotation.rotateY}deg)`,
       }}
+      className="flex flex-col items-center rounded-xl shadow-md max-w-52 ml-3 lg:ml-0 transition-transform duration-300 ease-out bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 h-full"
     >
       <div className="pt-8 flex flex-col rounded-xl w-full h-full border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
         <img
