@@ -1,7 +1,8 @@
-import React from "react";
 import ProjectCard from "./ProjectCard";
-import BlackJackTN from "../Assets/Project Thumbnails/BlackjackLab_screenshot.png";
-import GeocraftTN from "../Assets/Project Thumbnails/Geocraft_screenshot.png";
+import BlackJackTN from "../Assets/Project Thumbnails/BlackjackLab_screenshot.jpg";
+import PersonalWebsiteTN from "../Assets/Project Thumbnails/PersonalWebsite_screenshot.jpg";
+import GeocraftTN from "../Assets/Project Thumbnails/Geocraft_screenshot.jpg";
+import PlaylisterTN from "../Assets/Project Thumbnails/Playlister_screenshot.jpg";
 
 // import { firestore } from "../firebaseConfig";
 // import { getDocs, collection } from "firebase/firestore";
@@ -9,18 +10,40 @@ import GeocraftTN from "../Assets/Project Thumbnails/Geocraft_screenshot.png";
 const Projects = () => {
   const projectData = [
     {
-      title: "BlackJackLab",
+      title: "BlackjackLab",
       description: `
   This is a blackjack training tool designed for players to refine
   their strategy skills. It provides a platform where players can
   simulate various games, experiment with different approaches,
-  and analyze outcomes in real time.
+  and analyze outcomes in real time. It's not gambling I swear.
 `,
       link: "https://blackjacklab.azurewebsites.net/",
       skills: ["React", "Tailwind CSS", "Azure App Service"],
-      start: "September 2024",
+      start: "May 2025",
       end: "Present",
       thumbnail: BlackJackTN,
+    },
+
+    {
+      title: "Personal Website",
+      description: `
+  This is my personal site where I showcase my experience, projects,
+  and skills as a developer. It highlights the work I've done, provides
+  ways to connect with me, and serves as a hub for everything
+  I'm building or learning.
+`,
+      link: "https://elvenli.com",
+      skills: [
+        "Next.js",
+        "Tailwind CSS",
+        "Vercel",
+        "PostgreSQL",
+        "Neon",
+        "Prisma ORM",
+      ],
+      start: "September 2024",
+      end: "When cats with thumbs take over",
+      thumbnail: PersonalWebsiteTN,
     },
 
     {
@@ -49,12 +72,17 @@ const Projects = () => {
       skills: ["MERN", "Material UI", "YouTube API"],
       start: "August 2022",
       end: "December 2022",
+      thumbnail: PlaylisterTN,
     },
   ];
 
   return (
-    <section id="projects" className="bg-gray-100 py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
+    <section id="projects" className="py-12">
+      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
+        <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+          Projects
+        </div>
+      </div>
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projectData.map((project, index) => (

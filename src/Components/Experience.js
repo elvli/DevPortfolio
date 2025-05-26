@@ -1,4 +1,3 @@
-import React from "react";
 import InkWorksLogo from "../Assets/Experience/InkWorks-logo.png";
 import MDRCLogo from "../Assets/Experience/MDRC-logo.png";
 import NYCDEPLogo from "../Assets/Experience/NYCDEP-logo.png";
@@ -6,7 +5,7 @@ import NYCDEPLogo from "../Assets/Experience/NYCDEP-logo.png";
 function Experience() {
   const experiences = [
     {
-      role: "Software Developer",
+      role: "Full-stack Developer",
       company: "InkWorks Printing Inc.",
       duration: "January 2025 - Present",
       link: "https://inkworksprinting.shop",
@@ -56,13 +55,21 @@ function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-12">
-      <h2 className="text-3xl font-bold text-center mb-8">My Experience</h2>
+    <section id="experience" className="py-12 md:px-64">
+      {/* <h2 className="text-4xl text-indigo-200 font-bold ml-10 mb-8 tracking-wider">
+        Experience
+      </h2> */}
+
+      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
+        <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+          Experience
+        </div>
+      </div>
       <div className="container mx-auto px-14">
         <ol className="relative border-s border-gray-200">
           {experiences.map((exp) => (
             <li className="mb-10 ms-4">
-              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white" />
+              <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 bg-white border border-white" />
               <time className="mb-1 text-md font-normal leading-none text-gray-400">
                 {exp.duration}
               </time>
@@ -77,14 +84,12 @@ function Experience() {
                   </a>
                 )}
                 <div>
-                  <h3 className="text-2xl font-semibold text-gray-900">
-                    {exp.role}
-                  </h3>
+                  <h3 className="text-2xl font-semibold">{exp.role}</h3>
                   <a
                     href={exp.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-md font-semibold text-gray-600 hover:text-blue-700"
+                    className="text-md font-semibold text-gray-400 hover:text-blue-700"
                   >
                     {exp.company}
                   </a>
@@ -92,7 +97,7 @@ function Experience() {
               </div>
               <ul className="list-disc ml-4">
                 {exp.description.map((bullet) => (
-                  <li className="text-base font-normal text-gray-500">
+                  <li className="text-base font-medium text-gray-400">
                     {bullet}
                   </li>
                 ))}

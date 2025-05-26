@@ -1,6 +1,5 @@
-import React from "react";
 import LinkLight from "../Assets/Icons/link-light.png";
-import LinkDark from "../Assets/Icons/link-dark.png";
+// import LinkDark from "../Assets/Icons/link-dark.png";
 
 const ProjectCard = ({
   title,
@@ -12,7 +11,7 @@ const ProjectCard = ({
   thumbnail,
 }) => {
   return (
-    <div className="relative bg-white shadow-lg rounded-lg overflow-hidden flex flex-col hover:-translate-y-3 hover:shadow-xl transition-all duration-300 ease-in-out">
+    <div className="relative shadow-xl rounded-lg overflow-hidden flex flex-col bg-neutral-600/15 backdrop-blur-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-300 ease-in-out">
       {link !== "#" && (
         <a
           href={link}
@@ -21,7 +20,7 @@ const ProjectCard = ({
           className="inline-block"
         >
           <img
-            src={LinkDark}
+            src={LinkLight}
             alt="Project Link"
             className="h-6 w-6 hover:opacity-50 absolute top-4 right-4"
           />
@@ -29,15 +28,15 @@ const ProjectCard = ({
       )}
 
       <div className="p-4 flex-grow">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm italic text-gray-700">
+        <h3 className="text-xl font-semibold tracking-wide">{title}</h3>
+        <p className="text-sm italic text-gray-300 border-b pb-2">
           {start} - {end}
         </p>
-        <p className="text-gray-700 mb-2">{description}</p>
+        <p className="text-gray-300 my-2">{description}</p>
 
         {thumbnail && (
           <img
-            className="mt-2 rounded border border-gray-900"
+            className="mt-2 rounded border border-gray-200"
             src={thumbnail}
             alt="thumbnail"
           />
@@ -49,7 +48,7 @@ const ProjectCard = ({
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="inline-block bg-gray-200 text-gray-800 hover:bg-gray-300 text-sm font-medium rounded-full px-3 py-1 transition-all duration-100 ease-in-out"
+              className="inline-block bg-gray-800/35 text-gray-200 tracking-wide hover:bg-gray-300 text-sm font-medium rounded-full px-3 py-1 transition-all duration-100 ease-in-out"
             >
               {skill}
             </span>

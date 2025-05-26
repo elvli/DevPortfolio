@@ -145,8 +145,12 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-12 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">My Skills</h2>
+    <section id="skills" className="py-12">
+      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
+        <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+          Skills
+        </div>
+      </div>
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
           {skillData.map((skill, index) => (

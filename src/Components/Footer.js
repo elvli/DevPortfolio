@@ -5,7 +5,7 @@ import InstagramLight from "../Assets/Icons/instagram-light.png";
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="text-white py-6">
       <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
         <div className="flex flex-col items-start space-y-2">
           <p className="text-sm">
