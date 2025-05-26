@@ -1,4 +1,6 @@
 import ProjectCard from "./ProjectCard";
+import SectionTitle from "./SectionTitle";
+
 import BlackJackTN from "../Assets/Project Thumbnails/BlackjackLab_screenshot.jpg";
 import PersonalWebsiteTN from "../Assets/Project Thumbnails/PersonalWebsite_screenshot.jpg";
 import GeocraftTN from "../Assets/Project Thumbnails/Geocraft_screenshot.jpg";
@@ -78,11 +80,8 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-12">
-      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
-        <div className="p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
-          Projects
-        </div>
-      </div>
+      <SectionTitle title={"Projects"} />
+
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {projectData.map((project, index) => (

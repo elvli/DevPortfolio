@@ -1,9 +1,10 @@
 import portraitImg from "../Assets/round-portrait.png";
-import LinkedInDark from "../Assets/Icons/linkedin-dark.png";
-import GithubDark from "../Assets/Icons/github-dark.png";
-import InstagramDark from "../Assets/Icons/instagram-dark.png";
+import LinkedInLight from "../Assets/Icons/linkedin-light.png";
+import GithubLight from "../Assets/Icons/github-light.png";
+import InstagramLight from "../Assets/Icons/instagram-light.png";
 
-import ResumeViewer from "./ResumeViewer";
+// import ResumeViewer from "./ResumeViewer";
+import resumePDF from "../Assets/Elven-Li-Resume.pdf";
 
 function About() {
   return (
@@ -26,7 +27,7 @@ function About() {
                 className="text-gray-900 hover:text-gray-700"
               >
                 <img
-                  src={GithubDark}
+                  src={GithubLight}
                   alt="Github"
                   className="h-6 w-6 hover:opacity-50"
                 />
@@ -38,7 +39,7 @@ function About() {
                 className="inline-block"
               >
                 <img
-                  src={LinkedInDark}
+                  src={LinkedInLight}
                   alt="LinkedIn"
                   className="h-6 w-6 hover:opacity-50"
                 />
@@ -50,7 +51,7 @@ function About() {
                 className="text-gray-900 hover:text-gray-700"
               >
                 <img
-                  src={InstagramDark}
+                  src={InstagramLight}
                   alt="Instagram"
                   className="h-6 w-6 hover:opacity-50"
                 />
@@ -60,30 +61,27 @@ function About() {
 
           {/* Text Section */}
           <div className="text-left md:w-1/2 order-2 md:order-1 md:mx-5">
-            <h3 className="text-2xl text-gray-600 mb-2">Hi, my name is</h3>
-            <h3 className="text-6xl font-semibold text-gray-800 mb-4 ml-0">
-              Elven Li
+            <h3 className="text-6xl font-semibold text-gray-300 mb-4 ml-0">
+              Hi, I'm Elven.
             </h3>
-            <p className="text-lg text-gray-700 mb-4">
-              I'm a passionate software engineer with a love for solving complex
-              problems and building intuitive, user-friendly applications. I
-              specialize in web development using React, JavaScript, and CSS
-              frameworks like Tailwind CSS and BootStrap.
+            <p className="text-lg text-gray-400 mb-4">
+              I am a Full-stack Software engineer based in Queens, NY. I have a
+              love for solving complex problems and building intuitive,
+              user-friendly applications.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
+            {/* <p className="text-lg text-gray-400 mb-4">
               Outside of software engineering, I enjoy building PCs and playing
               competitive esports titles. I've been into motorsports for a
               while, especially Formula One, and have just started getting into
               baseball.
-            </p>
+            </p> */}
             <p className="text-lg text-gray-700 mb-8">
-              You can download my resume{" "}
+              You can view my resume{" "}
               <a
-                href="/Elven-Li-Resume.pdf"
-                download
-                className="text-blue-500 underline"
+                href={resumePDF}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-blue-500 underline"
               >
                 here
               </a>

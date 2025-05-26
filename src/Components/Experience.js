@@ -1,3 +1,5 @@
+import SectionTitle from "./SectionTitle";
+
 import InkWorksLogo from "../Assets/Experience/InkWorks-logo.png";
 import MDRCLogo from "../Assets/Experience/MDRC-logo.png";
 import NYCDEPLogo from "../Assets/Experience/NYCDEP-logo.png";
@@ -5,7 +7,7 @@ import NYCDEPLogo from "../Assets/Experience/NYCDEP-logo.png";
 function Experience() {
   const experiences = [
     {
-      role: "Full-stack Developer",
+      role: "Full-Stack Developer",
       company: "InkWorks Printing Inc.",
       duration: "January 2025 - Present",
       link: "https://inkworksprinting.shop",
@@ -56,15 +58,8 @@ function Experience() {
 
   return (
     <section id="experience" className="py-12 md:px-64">
-      {/* <h2 className="text-4xl text-indigo-200 font-bold ml-10 mb-8 tracking-wider">
-        Experience
-      </h2> */}
+      <SectionTitle title={"Experience"} />
 
-      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
-        <div className="p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
-          Experience
-        </div>
-      </div>
       <div className="container mx-auto px-14">
         <ol className="relative border-s border-gray-200">
           {experiences.map((exp) => (

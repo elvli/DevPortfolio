@@ -5,7 +5,7 @@ import NavMenu from "./NavMenu";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const buttonRef = useRef(null); // ref for toggle button
+  const buttonRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -22,7 +22,6 @@ function NavBar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // if click is NOT inside menu AND NOT inside toggle button, close menu
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target) &&
@@ -43,9 +42,9 @@ function NavBar() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="fixed text-gray-300 top-0 left-0 w-full bg-black shadow z-50">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-        <div className="flex items-center space-x-3 rtl:space-x-reverse">
+    <nav className="fixed text-indigo-100 top-0 left-0 w-full bg-black/50 backdrop-blur-sm rounded-b-2xl border-b-2 border-b-indigo-700/50 shadow z-50">
+      <div className="flex items-center mx-[2px] mb-[2px] justify-between rounded-b-2xl border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+        <div className="flex items-center space-x-3 rtl:space-x-reverse m-4">
           <img src={portraitImg} className="h-8" alt="Portrait Icon" />
           <a
             href="about"
@@ -63,7 +62,7 @@ function NavBar() {
         <button
           ref={buttonRef} // assign ref here
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden"
+          className="inline-flex items-center p-2 m-4 w-10 h-10 justify-center text-sm text-indigo-100 md:hidden"
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
@@ -97,7 +96,7 @@ function NavBar() {
         <div
           ref={menuRef}
           id="mobile-menu"
-          className="md:hidden absolute top-full left-0 w-full bg-gray-50 border border-gray-200 rounded-b-lg shadow-md"
+          className="md:hidden absolute top-full left-0 w-full bg-black/50 backdrop-blur-sm rounded-b-2xl border-b-2 border-b-indigo-700/50 shadow-md"
         >
           <NavMenu onLinkClick={handleScroll} />
         </div>

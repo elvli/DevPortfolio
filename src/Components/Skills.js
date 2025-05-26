@@ -1,4 +1,5 @@
 import SkillCard from "./SkillCard";
+import SectionTitle from "./SectionTitle";
 
 import JSLogo from "../Assets/Skills/js-logo.png";
 import PythonLogo from "../Assets/Skills/python-logo.png";
@@ -146,44 +147,14 @@ function Skills() {
   ];
 
   return (
-    // <section id="skills" className="py-12">
-    //   <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
-    //     <div className="p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
-    //       Skills
-    //     </div>
+    // <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
+    //   <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+    //     Skills
     //   </div>
-
-    //   <div className="container max-w-7xl mx-auto px-4">
-    //     <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
-    //       {skillData.map((skill, index) => (
-    //         <div>
-    //           <div
-    //             key={index}
-    //             className="flex items-center justify-center w-36 h-36 ml-3 lg:ml-0 rounded-full bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-t-neutral-400/25 border-b-indigo-700/50 shadow-md hover:scale-105 hover:shadow-xl hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out"
-    //           >
-    //             <div className="w-[142px] h-[142px] flex flex-col items-center justify-center rounded-full border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
-    //               <img
-    //                 src={skill.img}
-    //                 alt={`${skill.title} logo`}
-    //                 className="w-16 h-16 object-contain"
-    //               />
-    //               <h3 className="text-lg font-semibold text-center">
-    //                 {skill.title}
-    //               </h3>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
+    // </div>
 
     <section id="skills" className="py-12">
-      <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
-        <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
-          Skills
-        </div>
-      </div>
+      <SectionTitle title={"Skills"} />
 
       <div className="container max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4 md:gap-6 items-stretch">
