@@ -1,4 +1,5 @@
-import React from "react";
+import SkillCard from "./SkillCard";
+
 import JSLogo from "../Assets/Skills/js-logo.png";
 import PythonLogo from "../Assets/Skills/python-logo.png";
 import JavaLogo from "../Assets/Skills/java-logo.png";
@@ -8,7 +9,7 @@ import ReduxLogo from "../Assets/Skills/redux-logo.png";
 import CSSLogo from "../Assets/Skills/css-logo.png";
 import HTMLLogo from "../Assets/Skills/html-logo.png";
 import MongoDBLogo from "../Assets/Skills/mongodb-logo.png";
-import SQLLogo from "../Assets/Skills/sql-logo.png";
+import PostgreSQL from "../Assets/Skills/postgresql-logo.png";
 import ExpressJSLogo from "../Assets/Skills/expressjs-logo.png";
 import NodeJSLogo from "../Assets/Skills/nodejs-logo.png";
 import TailwindCSSLogo from "../Assets/Skills/tailwind-logo.png";
@@ -67,8 +68,8 @@ function Skills() {
       img: MongoDBLogo,
     },
     {
-      title: "SQL",
-      img: SQLLogo,
+      title: "PostgreSQL",
+      img: PostgreSQL,
     },
     {
       title: "ExpressJS",
@@ -95,7 +96,7 @@ function Skills() {
       img: GithubLogo,
     },
     {
-      title: "Github Actions",
+      title: "Actions",
       img: GithubActionsLogo,
     },
     {
@@ -145,28 +146,49 @@ function Skills() {
   ];
 
   return (
+    // <section id="skills" className="py-12">
+    //   <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
+    //     <div className="p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+    //       Skills
+    //     </div>
+    //   </div>
+
+    //   <div className="container max-w-7xl mx-auto px-4">
+    //     <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
+    //       {skillData.map((skill, index) => (
+    //         <div>
+    //           <div
+    //             key={index}
+    //             className="flex items-center justify-center w-36 h-36 ml-3 lg:ml-0 rounded-full bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-t-neutral-400/25 border-b-indigo-700/50 shadow-md hover:scale-105 hover:shadow-xl hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out"
+    //           >
+    //             <div className="w-[142px] h-[142px] flex flex-col items-center justify-center rounded-full border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
+    //               <img
+    //                 src={skill.img}
+    //                 alt={`${skill.title} logo`}
+    //                 className="w-16 h-16 object-contain"
+    //               />
+    //               <h3 className="text-lg font-semibold text-center">
+    //                 {skill.title}
+    //               </h3>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+
     <section id="skills" className="py-12">
       <div className="text-4xl text-indigo-200 text-center font-bold px-[2px] py-[1px] mb-8 rounded-full tracking-wider bg-neutral-600/15 backdrop-blur-lg border-t-2 border-b-2 border-indigo-700/50 border-t-neutral-400/25 hover:bg-neutral-400/15 transition-colors duration-300 ease-in-out max-w-xl mx-auto">
         <div className=" p-4 rounded-[999px] border-t border-t-indigo-300/50 border-b border-b-gray-200/25 border-l-2 border-l-gray-200/25 border-r-2 border-r-indigo-100/45">
           Skills
         </div>
       </div>
+
       <div className="container max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4 md:gap-6 items-stretch">
           {skillData.map((skill, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md max-w-52 max-h-44 ml-3 lg:ml-0 hover:scale-105 hover:shadow-xl transition-all duration-100 ease-in-out"
-            >
-              <h3 className="text-lg font-semibold mb-4 text-center">
-                {skill.title}
-              </h3>
-              <img
-                src={skill.img}
-                alt={`${skill.title} logo`}
-                className="w-16 h-16 object-contain"
-              />
-            </div>
+            <SkillCard key={index} skill={skill} />
           ))}
         </div>
       </div>
