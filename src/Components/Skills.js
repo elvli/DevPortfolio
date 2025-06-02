@@ -26,7 +26,7 @@ import FirebaseLogo from "../Assets/Skills/firebase-logo.png";
 import StripeLogo from "../Assets/Skills/stripe-logo.png";
 import LinuxLogo from "../Assets/Skills/linux-logo.png";
 import VSCodeLogo from "../Assets/Skills/vscode-logo.png";
-import IvanitiLogo from "../Assets/Skills/ivanti-logo.png";
+import IvantiLogo from "../Assets/Skills/ivanti-logo.png";
 import OktaLogo from "../Assets/Skills/okta-logo.png";
 import NetSpotLogo from "../Assets/Skills/netspot-logo.png";
 
@@ -133,8 +133,8 @@ function Skills() {
       img: VSCodeLogo,
     },
     {
-      title: "Ivaniti ITSM",
-      img: IvanitiLogo,
+      title: "Ivanti ITSM",
+      img: IvantiLogo,
     },
     {
       title: "Okta",

@@ -14,12 +14,12 @@ const Projects = () => {
     {
       title: "BlackjackLab",
       description: `
-  This is a blackjack training tool designed for players to refine
-  their strategy skills. It provides a platform where players can
-  simulate various games, experiment with different approaches,
-  and analyze outcomes in real time. It's not gambling I swear.
+        This is a blackjack training tool designed for players to refine
+        their strategy skills. It provides a platform where players can
+        simulate various games, experiment with different approaches,
+        and analyze outcomes in real time. It's not gambling I swear.
 `,
-      link: "https://blackjacklab.azurewebsites.net/",
+      link: "https://blackjacklab.vercel.app/",
       skills: [
         "Next.js",
         "Tailwind CSS",
@@ -36,10 +36,10 @@ const Projects = () => {
     {
       title: "Personal Website",
       description: `
-  This is my personal site where I showcase my experience, projects,
-  and skills as a developer. It highlights the work I've done, provides
-  ways to connect with me, and serves as a hub for everything
-  I'm building or learning.
+        This is my personal site where I showcase my experience, projects,
+        and skills as a developer. It highlights the work I've done, provides
+        ways to connect with me, and serves as a hub for everything
+        I'm building or learning.
 `,
       link: "https://elvenli.com",
       skills: ["React", "Tailwind CSS", "Azure App Service"],
@@ -50,9 +50,10 @@ const Projects = () => {
 
     {
       title: "GeoCraft",
-      description: `Geocraft is a web-based tool for users to create and
-    share customized map graphics. Users can easily place markers, customize
-    colors, and even upload their own geographical data.`,
+      description: `
+        Geocraft is a web-based tool for users to create and
+        share customized map graphics. Users can easily place markers, customize
+        colors, and even upload their own geographical data.`,
       link: "https://geocraftmaps.azurewebsites.net/",
       skills: [
         "MERN",
@@ -67,9 +68,10 @@ const Projects = () => {
     },
     {
       title: "Playlister",
-      description: `This is a playlist manager that allows users to create, play,
-    and share playlists. Users engage with others by liking, disliking, and
-    commenting on shared playlists.`,
+      description: `
+        This is a playlist manager that allows users to create, play,
+        and share playlists. Users engage with others by liking, disliking, and
+        commenting on shared playlists.`,
       link: "#",
       skills: ["MERN", "Material UI", "YouTube API"],
       start: "August 2022",
