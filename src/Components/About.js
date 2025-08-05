@@ -1,7 +1,7 @@
 import portraitImg from "../Assets/round-portrait.png";
 import LinkedInLight from "../Assets/Icons/linkedin-light.png";
 import GithubLight from "../Assets/Icons/github-light.png";
-import InstagramLight from "../Assets/Icons/instagram-light.png";
+// import InstagramLight from "../Assets/Icons/instagram-light.png";
 
 // import ResumeViewer from "./ResumeViewer";
 import resumePDF from "../Assets/Elven-Li-Resume.pdf";
@@ -44,7 +44,7 @@ function About() {
                   className="h-6 w-6 hover:opacity-50"
                 />
               </a>
-              <a
+              {/* <a
                 href="https://www.instagram.com/elven.li/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -55,7 +55,7 @@ function About() {
                   alt="Instagram"
                   className="h-6 w-6 hover:opacity-50"
                 />
-              </a>
+              </a> */}
             </div>
           </div>
 

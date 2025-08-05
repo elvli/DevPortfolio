@@ -1,7 +1,6 @@
-import React from "react";
 import LinkedInLight from "../Assets/Icons/linkedin-light.png";
 import GithubLight from "../Assets/Icons/github-light.png";
-import InstagramLight from "../Assets/Icons/instagram-light.png";
+// import InstagramLight from "../Assets/Icons/instagram-light.png";
 
 function Footer() {
   return (
@@ -41,7 +40,7 @@ function Footer() {
               className="h-6 w-6 hover:opacity-50"
             />
           </a>
-          <a
+          {/* <a
             href="https://www.instagram.com/elven.li/"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +51,7 @@ function Footer() {
               alt="Instagram"
               className="h-6 w-6 hover:opacity-50"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
