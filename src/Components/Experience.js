@@ -1,5 +1,6 @@
 import SectionTitle from "./SectionTitle";
 
+import PlasticNxtLogo from "../Assets/Experience/PlasticsNxt-logo.png";
 import InkWorksLogo from "../Assets/Experience/InkWorks-logo.png";
 import MDRCLogo from "../Assets/Experience/MDRC-logo.png";
 import NYCDEPLogo from "../Assets/Experience/NYCDEP-logo.png";
@@ -8,21 +9,34 @@ function Experience() {
   const experiences = [
     {
       role: "Full-Stack Developer",
+      company: "PlasticsNxt",
+      duration: "August 2025 - Present",
+      link: "https://plasticsnxt.com",
+      logo: PlasticNxtLogo,
+      description: [
+        `Driving the transformation and development of a B2B eCommerce plastics trading platform for a startup software company, with a focus on streamlining workflows, implementing history tracking, and modernizing the overall appearance and UX.`,
+        `Translated owner requests into feasible feature implementations, developed project timelines, and held meetings to ensure alignment as one of only 2 developers within an Agile development workflow.`,
+        `Revamped and modernized the landing page to display information about the site, user journey, userbase, and pricing.`,
+        `Built and implemented new monetization features, including featured ad placements, paid listing enhancements, and subscription tiers to align the user experience with revenue goals.`,
+        `Optimized UI/UX design for responsive performance across devices by compressing media, virtualizing lists for large datasets, integrating pagination, optimizing DOM structure, removing excessive nesting, and implementing skeleton screens.`,
+        `Enhanced readability, maintainability, and long-term scalability by refactoring and modularizing large Laravel components.`,
+        `Developed structured buyer/seller profiles and catalog pages showcasing certifications, transaction history, and product catalogs to strengthen marketplace credibility and trust across all aspects of the plastics industry.`,
+        `Implemented cleaner routing, middleware, and controller structures to reorganize the application into smaller, single-purpose components, reduce code duplication, and increase the reusability of components.`,
+      ],
+    },
+    {
+      role: "Full-Stack Developer",
       company: "InkWorks Printing Inc.",
-      duration: "January 2025 - Present",
+      duration: "January 2025 - August 2025",
       link: "https://inkworksprinting.shop",
       logo: InkWorksLogo,
       description: [
-        `Developed a responsive web interface using React, Redux, and Tailwind CSS, optimizing user experience
-          across all devices while ensuring accessibility and search engine friendliness.`,
-        `Integrated Stripe API for secure and seamless payment processing, enhancing transaction efficiency and user trust.`,
-        `Built an interactive design lab that allows users to create, customize, and preview t-shirt designs in real time,
-          improving user engagement and purchase confidence.`,
-        `Designed and managed a MongoDB database with 200+ product listings, ensuring efficient data organization,
-          fast retrieval, and scalability.`,
-        `Implemented Google OAuth authentication, allowing users to securely sign in with their Google accounts, enhancing
-          convenience and security while reducing friction during onboarding.`,
-        `Set up a CI/CD pipeline using GitHub Actions, automating testing, building, and deployment processes.`,
+        `Designed and developed a responsive eCommerce platform from scratch that enables users to design and customize apparel while ensuring a smooth user experience, accessibility, and SEO optimization using React, Redux, and Tailwind CSS.`,
+        `Implemented a custom design editor to support image uploads across image formats, text styling, and live previews on apparel templates, leveraging React and specialized npm libraries.`,
+        `Reduced asset sizes, created new descriptive tags, and implemented skeleton states and loading animations to streamline the user experience, and improved accessibility by introducing ARIA roles and keyboard-friendly interactions.`,
+        `Ensured secure and efficient client-server communication by building RESTful APIs with Node.js and Express for tracking inventory management, user authentication, and order processing.`,
+        `Designed and optimized a MongoDB database with 200+ product listings by implementing schema design, indexing strategies, and query optimization to ensure efficient data organization, fast retrieval, and scalability.`,
+        `Implemented a CI/CD pipeline using GitHub Actions to automate testing, building, and deployment processes, generating 6 hours of weekly time savings for the development team.`,
       ],
     },
     {
@@ -32,9 +46,8 @@ function Experience() {
       link: "https://www.mdrc.org/",
       logo: MDRCLogo,
       description: [
-        `Provided technical support for issues related to systems, software, and hardware 
-          by utilizing Ivanti ITSM to track, prioritize, and resolve 200+ support requests efficiently.`,
-        `Performed maintenance and repairs on 50+ laptops, including diagnosing issues and replacing faulty components.`,
+        `Provided technical support for system, software, and hardware issues and successfully tracked, prioritized, and resolved 200+ support requests within defined SLAs using Ivanti ITSM and Active Directory.`,
+        `Performed maintenance on 50+ laptops by diagnosing issues and replacing faulty components, and supported the onboarding process for new hardware and applications, such as Dell Latitudes and iPads.`,
         `Conducted a comprehensive network survey of office space using NetSpot, analyzing performance metrics to
           identify and address connectivity issues and optimize network efficiency.`,
         `Observed and participated in weekly data science team meetings, gaining insight into problem-solving

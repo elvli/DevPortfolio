@@ -58,7 +58,7 @@ function Education() {
             Network and Systems Administration Course
           </p>
 
-          <p className="italic text-gray-400">2024 - Present</p>
+          <p className="italic text-gray-400">2024 - 2025</p>
           <p className="text-gray-500">
             Linux Systems Administration - Computer Networking - Azure Cloud
             Computing - AI Fundamentals
